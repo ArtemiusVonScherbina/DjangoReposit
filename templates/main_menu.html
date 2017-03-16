@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block body%}
+<form>
+	Search: <input type="text">
+	<button class="btn btn-warning" type="submit">Search</button>
+</form>
+{% for staf0 in staff%}
+<label class="col-sm-4">First name: {{staf0.first_name}}</label>
+<label class="col-sm-3">Last name: {{staf0.last_name}}</label>
+<label class="col-sm-5">Position: {{staf0.position}}</label>
+{%endfor%}
+{%endblock body%}	
